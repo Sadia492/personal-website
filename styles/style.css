@@ -45,6 +45,16 @@ font-family: "Roboto", sans-serif; */
   letter-spacing: 0%;
   text-align: left;
 }
+.section-title {
+  color: rgb(54, 57, 88);
+  font-family: Bebas Neue;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #363958;
+}
 /* ------shared styles ends here---- */
 /* ------header styles starts here---- */
 /* nav styles */
@@ -76,10 +86,10 @@ font-family: "Roboto", sans-serif; */
 }
 .banner-image {
   width: 50%;
-  height: 540px;
+  /* height: 540px; */
 }
 .banner-image img {
-  width: 70%;
+  width: 100%;
   height: 100%;
 }
 .banner-content h1 {
@@ -116,6 +126,28 @@ font-family: "Roboto", sans-serif; */
   position: relative;
 }
 /* ------header styles ends here---- */
+/* ------about styles stars here---- */
+.about-image {
+  width: 50%;
+}
+.about-image img {
+  width: 100%;
+}
+.about {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.about .section-description {
+  margin-top: 27px;
+  margin-bottom: 30px;
+}
+.about .btn-primary {
+  padding: 18px 40px;
+}
+/* ------about styles ends here---- */
+
+/* ------responsive for smaller devices---- */
 @media screen and (max-width: 576px) {
   .menu {
     justify-content: center;
@@ -137,5 +169,12 @@ font-family: "Roboto", sans-serif; */
   }
   .circle {
     right: 0%;
+  }
+  .about {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .about-image {
+    width: 100%;
   }
 }
